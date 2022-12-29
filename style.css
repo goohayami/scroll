@@ -1,0 +1,99 @@
+body {
+  background-color: black;
+}
+header {
+  color: white;
+  text-align: center;
+}
+footer {
+  color: white;
+  text-align: center;
+}
+.gallery-container {
+  display: flex;
+  justify-content: center;
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.thumbnails img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.scrollbar {
+  width: 1px;
+  height: 720px;
+  background: #ccc;
+  display: block;
+  margin: 0 0 0 8px;
+}
+
+.thumb {
+  width: 1px;
+  position: absolute;
+  height: 0;
+  background: #000;
+}
+
+.slides {
+  margin: 0 16px;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 1rem;
+  width: calc(540px + 1rem);
+  padding: 0 0.25rem;
+  height: 720px;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+}
+
+.slides > div {
+  scroll-snap-align: start;
+}
+
+.slides img {
+  width: 540px;
+  object-fit: contain;
+}
+
+.slides::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .slides img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 2px;
+  }
+
+  .slides {
+    margin-top: 32px;
+    /* margin: 0 16px; */
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1rem;
+    width: calc(420px + 1rem);
+    padding: 0 0.25rem;
+    height: 400px;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+  }
+  .scrollbar {
+    width: 1px;
+    height: 500px;
+    background: #ccc;
+    display: block;
+    margin: 0 0 0 8px;
+  }
+}
