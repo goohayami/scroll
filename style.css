@@ -2,20 +2,14 @@ body {
   background-color: black;
   font-family: "Merriweather", serif;
 }
+hr{
+    background-color: green;
+}
 header {
   color: white;
   text-align: center;
 }
-footer {
-  margin: 0;
-  color: white;
-  text-align: center;
-  font-family: "Noto Sans TC", sans-serif;
-}
 
-footer p {
-  margin: 4px;
-}
 .gallery-container {
   display: flex;
   justify-content: center;
@@ -73,6 +67,10 @@ footer p {
 
 .slides::-webkit-scrollbar {
   display: none;
+}
+h3{
+    text-align: center;
+    color: wheat;
 }
 
 @media screen and (max-width: 700px) {
