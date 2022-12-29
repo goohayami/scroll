@@ -7,9 +7,14 @@ header {
   text-align: center;
 }
 footer {
+  margin: 0;
   color: white;
   text-align: center;
   font-family: "Noto Sans TC", sans-serif;
+}
+
+footer p {
+  margin: 4px;
 }
 .gallery-container {
   display: flex;
