@@ -1,5 +1,6 @@
 body {
   background-color: black;
+  font-family: "Merriweather", serif;
 }
 header {
   color: white;
@@ -8,6 +9,7 @@ header {
 footer {
   color: white;
   text-align: center;
+  font-family: "Noto Sans TC", sans-serif;
 }
 .gallery-container {
   display: flex;
