@@ -78,7 +78,7 @@ footer {
   }
 
   .slides {
-    margin-top: 32px;
+    margin-top: 8px;
     /* margin: 0 16px; */
     display: grid;
     grid-auto-flow: row;
